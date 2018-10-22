@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Data Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/collect.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div class='form-signin'>
+        <form>
+            <label for="coffeeOrderded">Cups of Coffee Ordered:</label>
+            <div class='orderedCoffee'>
+                <input type="number" class="form-control" id="coffeeOrdered">
+            </div>
+        </form>
+        <div class="stopwatch">
+            <div class="display">
+                <span class="minutes">00</span><span>:</span><span class="seconds">00</span><span>:</span><span class="centiseconds">00</span>
+            </div>
+            <div class="controls">
+                <button class="btn btn-secondary start" onclick='startTimer()'>Start</button>
+                <button class="btn btn-secondary stop" onclick='stopTimer()'>Stop</button>
+                <button class="btn btn-secondary reset" onclick='resetTimer()'>Reset</button>
+            </div>
+
+        </div>
+        <form class='log'>
+            <input type="button" class="btn btn-success btn-block" value="Log">
+
+        </form>
+        <form>
+            <input type="button" class="btn btn-danger" value="Edit" onclick=" relocateEdit()">
+            <input type="button" class="btn btn-primary" value="Upload" onclick=" relocateCheck()">
+        </form>
+    </div>
+    <script>
+        function relocateEdit() {
+            location.href = "edit.html";
+        }
+
+        function relocateCheck() {
+            location.href = 'check.html';
+        }
+    </script>
+    <script src="js/stopwatch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Data Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">Is this correct?</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Coffee Ordered</th>
+                    <th scope="col">Time Elapsed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="button" class="btn btn-danger" value="Edit" onclick=" relocateEdit()">
+        <input type="button" class="btn btn-primary" value="Confirm" onclick=" relocateConfirm()">
+    </form>
+
+    <script>
+        function relocateConfirm() {
+            location.href = "confirm.html";
+        }
+        function relocateEdit() {
+            location.href = "edit.html";
+        }
+    </script>
+</body>
+
+</html>
